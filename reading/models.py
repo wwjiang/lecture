@@ -5,7 +5,7 @@ Created on 2013-4-18
 '''
 from django.db import models
 from django.contrib.auth.models import User
-from accounts.models import OrgModel
+from org.models import OrgModel
 from core.models import *
 
 class ReadingModel(ItemModel):

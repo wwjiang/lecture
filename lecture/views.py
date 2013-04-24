@@ -160,7 +160,7 @@ def lecture_detail(request,lecture_id):
 """
 讲座搜索视图
 """
-def search(request,key):
+def lecture_search(request,key):
     #从title,speaker,date,place寻找匹配数据
     #以list形式存储在lectures,不允许重复
     #Q表达式来实现or查询

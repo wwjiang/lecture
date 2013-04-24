@@ -7,7 +7,7 @@ from django.db import models
 from django.contrib.auth.models import Group
 from core.models import ArticleModel
 
-class OrgModel(models.Models):
+class OrgModel(models.Model):
     #其图片轮显和侧边栏推广图可以放在特定路径下面，为每个组织设一个以名字命名的路径
     #基础资料
     group = models.OneToOneField(Group,verbose_name="协会名字")
@@ -34,7 +34,7 @@ class FriendLinkModel(models.Model):
     class Meta:
         ordering = ["order"]#升序排序
         
-class MessageBoardModel(ArticleModel):
+class MessageModel(ArticleModel):
     org = models.ForeignKey(OrgModel)
     class Meta:
         verbose_name = "留言板"

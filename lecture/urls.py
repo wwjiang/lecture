@@ -17,7 +17,7 @@ urlpatterns = patterns('lecture.views',
         (r'^org/(?P<org_id>\d+)/$','lecture_org_page'),
         (r'^org/(?P<org_id>\d+)/page/(?P<page_id>\d+)/$','lecture_org_page'),
         #讲座搜索
-        (r'^search/(?P<key>.+?)/$','search'),
+        (r'^search/(?P<key>.+?)/$','lecture_search'),
         #单一讲座详细信息
         (r'^detail/(?P<lecture_id>\d+)/$','lecture_detail'),
 
@@ -36,7 +36,7 @@ urlpatterns = patterns('lecture.views',
         
          #当日讲座列表
         (r'^date/(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/$','lecture_day'),
-        (r'^calendar/$','getCalendarInfo')
-        (r'^calendar/(?P<year>\d{4})/(?P<month>\d{2}/$','getCalendarInfo')
-        (r'^calendar/(?P<year>\d{4})/(?P<month>\d{2}/{prev|next}/$','getCalendarInfo')
+        (r'^calendar/$','getCalendarInfo'),
+        (r'^calendar/(?P<year>\d{4})/(?P<month>\d{2}/$','getCalendarInfo'),
+        (r'^calendar/(?P<year>\d{4})/(?P<month>\d{2}/{prev|next}/$','getCalendarInfo'),
 )

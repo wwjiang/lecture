@@ -4,7 +4,7 @@ Created on 2013-4-12
 @author: wwjiang
 '''
 from django.db import models
-from accounts.models import OrgModel
+from org.models import OrgModel
 from core.models import *
 class LectureModel(ItemModel):
     class Meta:
@@ -27,22 +27,3 @@ class LectureNoteModel(ArticleModel):
     class Meta:
         verbose_name = "½²×ù±Ê¼Ç"
         verbose_name_plural = "½²×ù±Ê¼Ç"
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
