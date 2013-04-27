@@ -70,3 +70,8 @@ class TagModel(models.Model):#多对一
     class Meta:
         verbose_name = "标签"
         verbose_name_plural = "标签"
+        
+class StatModel(models.Model):
+    click_number_today = models.IntegerField()
+    click_number_today = models.IntegerField()
+    
